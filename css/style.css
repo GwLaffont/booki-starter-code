@@ -30,6 +30,8 @@ a {
     text-decoration: none;
 }
 
+
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -57,6 +59,45 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Logo et Header ***********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 50px;
+    padding-top: 22px;
+    border-top: solid 3px transparent;
+}
+
+header li a:hover {
+    color: #0065FC;
+    padding-top: 22px;
+    border-top: solid 3px #0065FC;
+}
+/****** Section Recherche ***********/
+
+.searchbar {
+    display: flex;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+}
+.filter-button {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -121,7 +162,71 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Hebergements ***********/
 
+.hebergement-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.hebergement-cards .card {
+    width: 240px;
+    height: 207px;
+}
+
+.hebergement-cards .card img {
+    width: 240px;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergement-cards .card-content {
+    padding: 0 15px 0 15px;
+    line-height: 0.8;
+}
+/****** Activités ***********/
+
+.activités {
+    padding: 30px;
+}
+
+.marseille-activite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.marseille-activite .card {
+    height: 439px;
+    width: 297px;
+    padding: 0px;
+}
+
+.marseille-activite .card img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.marseille-activite .card h3 {
+    padding: 0 0 20px 20px;
+}
+
+/****** footer ***********/
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
