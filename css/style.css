@@ -80,18 +80,42 @@ header li a:hover {
     color: #0065FC;
     padding-top: 22px;
     border-top: solid 3px #0065FC;
+    
 }
 /****** Section Recherche ***********/
+
+.recherche {
+    gap: 35px;
+}
 
 .searchbar {
     display: flex;
 }
 
+.filtres h3 {
+    margin: 0;
+}
+
 .filtres {
+    height: 50px;
+    margin: auto;
     display: flex;
     flex-direction: row;
+    gap: 15px;
 }
 .filter-button {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px #DEEBFF;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+
+}
+.filter-button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.available {
     display: flex;
     flex-direction: row;
 }
