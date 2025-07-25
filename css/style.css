@@ -465,7 +465,7 @@ footer {
         margin: 0;
         width: 100%;
         text-align: center;
-        padding-top: none;
+        padding-top: 0;
         border-top: none;
         padding-bottom: 15px;
         border-bottom: 2px solid var(--main-bg-color);
@@ -473,7 +473,7 @@ footer {
 
     header li:hover {
         color: var(--main-color);
-        padding-top: none;
+        padding-top: 0;
         border-top: none;
         padding-bottom: 15px;
         border-bottom: 2px solid var(--main-color);
