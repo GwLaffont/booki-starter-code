@@ -101,7 +101,7 @@ header li a:hover {
     flex-direction: column;
     gap: 35px; /* Took me A WHILE to remember it needed a flex call to work */
     justify-content: left;
-
+    margin-bottom: 35px;
 }
 
 .search {
@@ -114,6 +114,31 @@ header li a:hover {
     width: fit-content;
     text-align: center;
     justify-content: center;
+}
+
+.search input{
+    margin: auto;
+    height: 44px;
+    border:  1px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.search button {
+    height: 50px;
+    margin: auto;
+    border: solid var(--main-color) 1px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 15px;
+}
+
+.search button:hover {
+    cursor: pointer;
 }
 
 .search2 {
@@ -139,31 +164,7 @@ input::placeholder {
         color: black;
     }
 
-.search input{
-    margin: auto;
-    height: 44px;
-    border:  1px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    color: black; /* Color doesn't show black */
-}
 
-.search button {
-    height: 50px;
-    margin: auto;
-    border: solid var(--main-color) 1px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: var(--main-color);
-    color: white;
-    border-radius: 0 15px 15px 0;
-    padding: 15px;
-}
-
-.search button:hover {
-    cursor: pointer;
-}
 
 .filtres {
     
@@ -203,6 +204,7 @@ input::placeholder {
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+   
 }
 
 .infocircle {
@@ -210,7 +212,7 @@ input::placeholder {
     justify-content: center;
     width: 24px;
     height: 24px;
-} /* Mettre l'icone au milieu de la div*/
+} 
 
 
 /* Info circle test*/
@@ -488,33 +490,11 @@ footer {
         padding: 0 20px;
     }
 
-    .search {
+    .search1 {
         display: none;
     }
 
     .search2 {
-
-        display: flex;
-        flex-direction: row;
-        height: 49px;
-        border-radius: 15px;
-        border: solid var(--main-bg-color) 1px ;
-        width: fit-content;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .search2 input{
-        margin: auto;
-        height: 44px;
-        border:  1px;
-        font-size: 18px;
-        font-weight: 700;
-        text-align: center;
-        color: black; /* Color doesn't show black */
-    }
-
-    .search2 button {
         height: 50px;
         margin: auto;
         border: solid var(--main-color) 1px;
@@ -525,7 +505,7 @@ footer {
         padding: 15px;
     }
 
-    .search2 button .fa-solid {
+    .search2 .fa-solid {
         color: white;
     }
 
